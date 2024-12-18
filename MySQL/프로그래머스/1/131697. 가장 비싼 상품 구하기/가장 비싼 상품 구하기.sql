@@ -1,0 +1,5 @@
+-- 가장 비싼 상품 구하기
+SELECT price as MAX_PRICE
+FROM PRODUCT
+ORDER BY price DESC
+LIMIT 1
