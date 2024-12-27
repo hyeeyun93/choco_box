@@ -1,8 +1,6 @@
 def solution(numbers):
-    multi = []
-    for i in range(len(numbers)):
-        for j in range(len(numbers)):
-            if i != j:
-                multi.append(numbers[i] * numbers[j])
-    answer = max(multi)
+    sorted_numbers = sorted(numbers)
+    a = sorted_numbers[0] * sorted_numbers[1]
+    b = sorted_numbers[-1] * sorted_numbers[-2]
+    answer = max(a, b)
     return answer
