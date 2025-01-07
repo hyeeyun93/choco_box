@@ -8,4 +8,4 @@ join hr_grade as hg
 on he.emp_no = hg.emp_no
 group by he.emp_no
 order by score desc
-limit 1 ;
+limit 1
