@@ -1,3 +1,7 @@
+import time
+
+start = time.time()
+
 def solution(board):
     size = len(board[0])
     answer = size * size
@@ -11,3 +15,6 @@ def solution(board):
                         bomb.add((i, j))
                         
     return answer - len(bomb)
+
+end = time.time()
+print(end-start)
