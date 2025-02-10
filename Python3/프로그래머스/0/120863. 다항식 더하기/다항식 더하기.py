@@ -13,10 +13,7 @@ def solution(polynomial):
             constant += int(i)
     
     if xnum == 0:
-        if constant == 0:
-            answer = '0'
-        else:
-            answer = str(constant)
+        answer = str(constant)
     elif xnum != 0 and constant == 0:
         if xnum == 1:
             answer = 'x'
