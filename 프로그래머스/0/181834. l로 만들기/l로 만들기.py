@@ -1,8 +1,7 @@
 def solution(myString):
     answer = ''
-    after = 'mnopqrstuvwxyz'
     for c in myString:
-        if c not in after:
+        if c < 'l':
             answer += 'l'
         else:
             answer += c
